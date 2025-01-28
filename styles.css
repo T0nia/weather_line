@@ -1,0 +1,18 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(31, 28, 28);
+}
+
+.container {
+    width: 450px;
+    background: linear-gradient(140deg, rgb(11, 83, 11), rgb(15, 15, 95));
+    color: white;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
