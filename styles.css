@@ -15,4 +15,24 @@ body {
     padding: 20px;
     margin: 100px auto;
     border-radius: 10px;
+    align-items: center;
+}
+
+.search {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    padding: 10px 22px;
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: rgb(157, 197, 197);
+    color: rgb(31, 28, 28);
 }
