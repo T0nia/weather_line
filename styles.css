@@ -12,10 +12,10 @@ body {
     width: 450px;
     background: linear-gradient(140deg, rgb(11, 83, 11), rgb(15, 15, 95));
     color: white;
-    padding: 20px;
+    padding: 30px;
     margin: 100px auto;
     border-radius: 10px;
-    align-items: center;
+    text-align: center;
 }
 
 .search {
@@ -28,11 +28,46 @@ justify-content: space-between;
 .search input {
     border: 0;
     outline: 0;
-    padding: 10px 22px;
+    padding: 12px 22px;
     flex: 1;
     margin-right: 20px;
     border-radius: 30px;
     font-size: 18px;
-    background-color: rgb(157, 197, 197);
+    background-color: rgb(236, 241, 241);
     color: rgb(31, 28, 28);
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background-color: rgb(236, 241, 241);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather img {
+    margin-top: 20px;
+    width: 170px;
+    
+}
+
+.weather h1 {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    
 }
