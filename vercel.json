@@ -1,6 +1,0 @@
-{
-    "env": {
-      "NEXT_PUBLIC_OPENWEATHER_API_KEY": "your_new_api_key"
-    }
-  }
-  

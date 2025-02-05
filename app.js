@@ -4,9 +4,7 @@ const searchButton = document.querySelector('.search button');
 const image = document.querySelector('.icon');
 
 async function getWeather (cityn) {
- // Using environment variable for the API key
- const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;  //fetch the API key from the environment variable 
- let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityn}&appid=${apiKey}&units=metric`);
+ let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityn}&appid=ef7ef6e6d5921451ee386db1aae6b89d&units=metric`);
  let data = await res.json();
  console.log(data);
 
