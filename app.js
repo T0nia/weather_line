@@ -3,11 +3,11 @@ const searchInput = document.querySelector('.search input');
 const searchButton = document.querySelector('.search button');
 const image = document.querySelector('.icon');
 
+//integrating the API 
 async function getWeather (cityn) {
  let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityn}&appid=ef7ef6e6d5921451ee386db1aae6b89d&units=metric`);
  let data = await res.json();
  console.log(data);
-
 
  document.querySelector('.centigrade').innerHTML = Math.round(data.main.temp) + "°C";
  document.querySelector('.cityn').innerHTML = data.name;
