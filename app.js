@@ -13,7 +13,6 @@ async function getWeather (cityn) {
  } else {
     document.querySelector('.error').style.display = "none";
  }
-
  
  let data = await res.json();
  console.log(data);
