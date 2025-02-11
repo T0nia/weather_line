@@ -6,6 +6,15 @@ const image = document.querySelector('.icon');
 //integrating the API 
 async function getWeather (cityn) {
  let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityn}&appid=ef7ef6e6d5921451ee386db1aae6b89d&units=metric`);
+ 
+ //error handling
+ if (res.status == 404) {
+    document.querySelector('.error').style.display = "block";
+ } else {
+    document.querySelector('.error').style.display = "none";
+ }
+
+ 
  let data = await res.json();
  console.log(data);
 
@@ -20,7 +29,7 @@ async function getWeather (cityn) {
  } else if(data.weather[0].main == "clear") 
      {image.src = "/clear.jpg"}
  
- else if(data.weather[0].main == "Rain") 
+ else if(data.weather[0].main == "Rain")
      {image.src = "/rain3.png"}
  
  else if(data.weather[0].main == "Drizzle") 
@@ -31,6 +40,3 @@ async function getWeather (cityn) {
  searchButton.addEventListener('click', () => {
      getWeather(searchInput.value);
  });
- 
- 
- 
